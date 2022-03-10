@@ -27,7 +27,7 @@
 
 ```
 
-├── root
+├── teste_tecnico_node_mongo
 │   ├── package-lock.json # Arquivo essencial com dependecias e configurações
 │   ├── package.json  # Arquivo essencial com dependecias e configurações
 │   ├── index.js # Arquivo com as requires e configurações para comunicação com o servidor
