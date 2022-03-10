@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buscando dispositivo</title>
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+</head>
+
+<body>
+    <main class="container">
+        <h1 class="title">Buscando o dispositivo e interpretando</h1>
+        <form class="form" onsubmit="buscarHash(event, this);">
+            <div class="row">
+                <div class="form___group">
+                    <input class="form___data" id="hash"  name="hash"  required type="text">
+                    <span class="form___requirement">Digite o ID do Dispositivo.</span>
+                </div>
+            </div>
+            
+            <div class="row has-alignCenter">
+                
+                <button class="form__button" type="submit">Buscar dispositivo</button>
+            </div>
+            </form>
+            
+        </main>
+        <script src="js/search.js" type="text/javascript"></script>
+</body>
+</html>
