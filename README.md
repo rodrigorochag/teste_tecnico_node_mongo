@@ -27,7 +27,7 @@
 
 ```
 
-├── root
+├── teste_tecnico_node_mongo
 │   ├── package-lock.json # Arquivo essencial com dependecias e configurações
 │   ├── package.json  # Arquivo essencial com dependecias e configurações
 │   ├── index.js # Arquivo com as requires e configurações para comunicação com o servidor
@@ -59,7 +59,7 @@ $ npm start
 
 <p align="left" id=manual_uso>
 
- Para utilizar o sistema, é necessário executar o comando <i>"npm start"</i> e abrir o arquivo <i>index.html</i>. Nesta versão, é possível apenas acessar o comando HASH completo de um dispositivo que foi cadastrado no sistema através de uma requisição POST. Futuramente o sistema contará com a intepretação dessas chaves HASH, contando também com o valor em bytes de cada região do comando serial.
+ Para utilizar o sistema, é necessário executar o comando <i>"npm start"</i> e abrir o arquivo <i>index.html</i>. Nesta versão, é possível apenas acessar o comando HASH completo de um dispositivo que foi cadastrado no sistema através de uma requisição POST, este dado será exibido através de um popup. Futuramente o sistema contará com a intepretação dessas chaves HASH, contando também com o valor em bytes de cada região do comando serial.
  
 </p>
 
