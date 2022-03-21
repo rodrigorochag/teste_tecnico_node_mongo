@@ -29,9 +29,9 @@ function buscarHash(event, form) {
 
 
 function mostrarResposta(hash) {    
-    const dado_hash = hash[0].hash; 
-    
-    alert(dado_hash);   
+    //const dado_hash = hash[0].hash; 
+    //const dado_hash = hash; 
+    console.log(hash);   
     
   
 };
