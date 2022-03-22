@@ -10,10 +10,12 @@
  <a href="#autor">Autor</a>
 </p>
 
-<p align="left" id=objetivo> Este desafio teve como objetivo desenvolver um sistema para que os dados de sensores de geolocalização sejam enviados para o servidor, possibilitando uma busca através do ID do dispostitivo em uma página web. </p>
+<p align="left" id=objetivo> Este desafio teve como objetivo desenvolver um sistema para que os dados de sensores de geolocalização sejam enviados para o servidor, possibilitando uma busca através do ID do dispostitivo através do endpoint na URL. </p>
 
 
 <p align="left" id=solucao> A solução proposta visou desenvolver um sistema de comunicação baseada em API Rest através de um objeto JSON contendo informações específicas, sendo possível acessar o objeto através de um endpoint na URL ou então na região em destaque na página principal. Exemplo: <i> "/api/v1/location/:device_id".</i> Onde o "device_id" seria responsável por identificar o objeto. </p>
+
+![Exemplo dos dados salvos no banco](https://github.com/rodrigorochag/teste_tecnico_node_mongo/blob/main/exemplo.PNG)
 
 <p align="left" id=tecnologias> A sistema foi desenvolvido utilizando a linguagem de programação <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">JavaScript<a/>. Através do ambiente backend <a href="https://nodejs.org/en/docs/">Node.JS</a> foi possível desenvolver uma arquitetura que suporte a comunicação web entre servidores, sendo eles de desenvolvimento ou produção. Com o auxílio do framework próprio para o Node.JS, o <a href="https://expressjs.com/pt-br/">Express JS</a> permitiu auxiliar a construção do servidor. Para que os objetos JSON fiquem armazenados no sistema e que seja possível realizar um CRUD para resgatar os dados, foi utilizado o <a href="https://www.mongodb.com/">MongoDB</a> haja vista que a tecnologia permite que dados não estruturados sejam acessados facilmente através do sistema.  </p>   <a href=""></a>
   
@@ -37,6 +39,8 @@
 │   │   └── style.css # Estilo da página HTML
 │   ├── js
 │   │   └── search.js # Funções de CRUD
+│   │   └── trata_hash.js # responsável por separar o HASH em indices de um array
+│   │   └── traduz.js # responsável por realizar os calculos
 │   ├── models
 │   │   └── Location.js # Modelo do que é armazenado no banco de dados
 │   ├── node_modules
@@ -59,7 +63,7 @@ $ npm start
 
 <p align="left" id=manual_uso>
 
- Para utilizar o sistema, é necessário executar o comando <i>"npm start"</i> e abrir o arquivo <i>index.html</i>. Nesta versão, é possível apenas acessar o comando HASH completo de um dispositivo que foi cadastrado no sistema através de uma requisição POST, este dado será exibido através de um popup. Futuramente o sistema contará com a intepretação dessas chaves HASH, contando também com o valor em bytes de cada região do comando serial.
+ Para utilizar o sistema, é necessário executar o comando <i>"npm start"</i> e abrir o arquivo <i>index.html</i>. Nesta versão, é possível realizar o post do HASH e salvar no banco de dados apenas se os cálculos e o HASH forem compatíveis. Se o HASH for compatível, ele é salvo no banco de dados, se não, é exibido uma mensagem de erro instruindo sobre o que deve ser feito.
  
 </p>
 
