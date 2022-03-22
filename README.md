@@ -39,10 +39,10 @@
 │   │   └── style.css # Estilo da página HTML
 │   ├── js
 │   │   └── search.js # Funções de CRUD
-│   │   └── trata_hash.js # responsável por separar o HASH em indices de um array
-│   │   └── traduz.js # responsável por realizar os calculos
+│   │   └── trata_hash.js # responsável por separar o HASH em indices de um array, este arquivo retorna uma função
+│   │   └── traduz.js # responsável por realizar os calculos separados por funções de acordo com cada chave do objeto JSON
 │   ├── models
-│   │   └── Location.js # Modelo do que é armazenado no banco de dados
+│   │   └── Location.js # Modelo do que é armazenado no banco de dados e executa as funções importadas dos arquivos ../js/search e traduz
 │   ├── node_modules
 │   │   └── ... # Diversos arquivos do Node.js
 │   ├── routes
