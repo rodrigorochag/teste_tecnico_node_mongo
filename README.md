@@ -63,7 +63,7 @@ $ npm start
 
 <p align="left" id=manual_uso>
 
- Para utilizar o sistema, é necessário executar o comando <i>"npm start"</i> e abrir o arquivo <i>index.html</i>. Nesta versão, é possível realizar o post do HASH e salvar no banco de dados apenas se os cálculos e o HASH forem compatíveis. Se o HASH for compatível, ele é salvo no banco de dados, se não, é exibido uma mensagem de erro instruindo sobre o que deve ser feito.
+ Para utilizar o sistema, é necessário executar o comando <i>"npm start"</i> e abrir o console do seu browser. Nesta versão, é possível realizar o post do HASH e salvar no banco de dados apenas se os cálculos e o HASH forem compatíveis. Se o HASH for compatível, ele é salvo no banco de dados, se não, é exibido uma mensagem de erro instruindo sobre o que deve ser feito.
  
 </p>
 
